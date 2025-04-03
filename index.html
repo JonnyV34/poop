@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Pages Site</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Web Functions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This site is hosted on GitHub Pages!</p>
+
+    <header>
+        <h1>Cool Web Functions</h1>
+        <button id="themeToggle">🌙 Toggle Theme</button>
+    </header>
+
+    <section class="clock-section">
+        <h2>⏰ Real-Time Clock</h2>
+        <p id="clock">Loading...</p>
+    </section>
+
+    <section class="quote-section">
+        <h2>📜 Random Quote Generator</h2>
+        <p id="quote">Click the button for inspiration!</p>
+        <button onclick="getQuote()">Get Quote</button>
+    </section>
+
+    <section class="canvas-section">
+        <h2>🎨 Simple Drawing Canvas</h2>
+        <canvas id="drawCanvas"></canvas>
+        <button onclick="clearCanvas()">Clear Canvas</button>
+    </section>
+
+    <section class="todo-section">
+        <h2>📝 To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="New task...">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="todoList"></ul>
+    </section>
+
+    <section class="fun-buttons">
+        <h2>🎮 Interactive Buttons</h2>
+        <button onclick="playSound()">🔊 Play Sound</button>
+        <audio id="soundEffect" src="click.mp3"></audio>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
